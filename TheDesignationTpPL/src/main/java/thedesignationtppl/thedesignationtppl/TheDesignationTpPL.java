@@ -77,19 +77,6 @@ public final class TheDesignationTpPL extends JavaPlugin implements Listener {
                 sender.sendMessage("configリロードしました");
                 return true;
             }
-            if (args[0].equalsIgnoreCase("remove")) {
-                if (args.length <= 1) {
-                    return false;
-                }
-                if (args[1].equalsIgnoreCase(args[1])) {
-                    String data = getConfig().getString(args[1]);
-                    if (data == null) return false;
-                    getConfig().set(data, null);
-                    saveConfig();
-                    return true;
-                }
-                return true;
-            }
         }
         return true;
     }
