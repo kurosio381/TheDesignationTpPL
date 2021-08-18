@@ -1,0 +1,11 @@
+name: TheDesignationTpPL
+version: ${project.version}
+main: thedesignationtppl.thedesignationtppl.TheDesignationTpPL
+api-version: 1.15
+authors: [46kuri_]
+description: TheDesignationTpPL
+
+commands:
+  tdtp:
+    description: testmessageSYUTURYOKU
+    usage:  /tdtp
