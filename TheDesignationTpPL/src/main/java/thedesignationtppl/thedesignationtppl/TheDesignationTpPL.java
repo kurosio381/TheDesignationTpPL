@@ -81,12 +81,10 @@ public final class TheDesignationTpPL extends JavaPlugin implements Listener {
                 if (args.length <= 1) {
                     return false;
                 }
-                if (args[1].equalsIgnoreCase("set1")) {
-                    getConfig().set("set1", null);
-                    return true;
-                }
-                if (args[1].equalsIgnoreCase("set2")) {
-                    getConfig().set("set2", null);
+                if (args[1].equalsIgnoreCase(args[1])) {
+                    String data = getConfig().getString(args[1]);
+                    if (data == null) return false;
+                    getConfig().set(data, null);
                     return true;
                 }
                 return true;
