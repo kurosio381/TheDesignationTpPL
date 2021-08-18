@@ -85,6 +85,7 @@ public final class TheDesignationTpPL extends JavaPlugin implements Listener {
                     String data = getConfig().getString(args[1]);
                     if (data == null) return false;
                     getConfig().set(data, null);
+                    saveConfig();
                     return true;
                 }
                 return true;
