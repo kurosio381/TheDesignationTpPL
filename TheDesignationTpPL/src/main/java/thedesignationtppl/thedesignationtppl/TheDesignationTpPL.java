@@ -54,9 +54,9 @@ public final class TheDesignationTpPL extends JavaPlugin implements Listener {
                 if (args.length <= 1) {
                     return false;
                 }
-                String data = getConfig().getString(args[1]);
-                if (data == null) return false;
-                if (args[1].equalsIgnoreCase(data)) {
+                if (args[1].equalsIgnoreCase(args[1])) {
+                    String data = getConfig().getString(args[1]);
+                    if (data == null) return false;
                     String[] loc = data.split(",");
                     World world = Bukkit.getServer().getWorld(loc[0]);
                     double x = Double.parseDouble(loc[1]);
